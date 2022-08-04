@@ -19,9 +19,27 @@ body{
     margin-left: 40px;
     margin-top: 20px;
     width:400px; 
+}#imperial-calculator{
+    display: none;
 }
-input{
+.height,
+.weight,
+#years,
+.years
+{
     border:none;
+    height: 30px;
+    border-radius: 12px;
+    padding: 10px;
+}
+#inches{
+    width: 100px;
+    height:30px ;
+    position: absolute;
+    left: 210px;
+    top:250px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .units{
     height: 30px;
@@ -32,6 +50,9 @@ input{
     background-color: black;
     margin-top: 10px;
     cursor: pointer;
+}
+#unit2{
+    background-color: blue;
 }
 span{
     color: red;

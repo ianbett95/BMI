@@ -9,36 +9,65 @@
   </head>
   <body>
     <div class="container">
-      <div>
+      <div id="metric-calculator">
         <h1>BMI calculator</h1>
         <form action="">
           Gender:
-          <input type="radio" id="" name="" />male
-          <input type="radio" id="" name="" />female
-          <input type="radio" id="" name="" />other
+          <br>
+         <input type="radio" id="" name="Gender" />male
+         <br>
+          <input type="radio" id="" name="Gender" />female
+          <br>
+          <input type="radio" id="" name="Gender" />other
           <br />
           age:
-          <input type="text" placeholder="years (optional)" id="years" required  />
+          <input type="text" placeholder="years (optional)" class="years"/>
           <br />
           <br>
           <p id="cm">height</p>
-          <input type="text" placeholder="cm" id="height" required />
+          <input type="text" placeholder="cm" id="height"
+          class="height" required />
           <br /><span id="height-error"></span>
           <br>
           <p id="kgs">weight</p>
-          <input type="number"placeholder="kgs" id="weight"><br><span id="weight-error"></span>
+          <input type="number"placeholder="kgs" id="weight"class="weight"><br>
+          <span id="weight-error"></span>
         </form>
-        <button id="calculate" class="units">calculate</button>
+        <button id="calculate1" class="units">calculate1</button>
+        <!-- <input type="submit" value="calculate" id="calculate1"> -->
       </div>
-
+      <div id="imperial-calculator">
+        <h1>BMI calculator</h1>
+        <form action="">
+          Gender:
+          <br>
+         <input type="radio" id="" name="Gender" />male
+         <br>
+          <input type="radio" id="" name="Gender" />female
+          <br>
+          <input type="radio" id="" name="Gender" />other
+          <br />
+          age:
+          <input type="text" placeholder="years (optional)" id="years" />
+          <br />
+          <br>
+          <p >height</p>
+          <input type="text" placeholder="feet" id="height_2" class="height" required />
+          <input type="text" id="inches"placeholder="inches">
+          <br /><span id="height_error"></span>
+          <br>
+          <p >weight</p>
+          <input type="number"placeholder="lbs" id="weight_2" class="weight"><br><span id="weight_error"></span>
+        </form>
+        <button id="calculate2" class="units">calculate2</button>
+      </div>
       <div class="buttons">
         <button class="units" id="unit1">imperial units</button>
         <button class ='units'id="unit2">metric units</button>
         <br> 
         your BMI is <span id="result"></span>
       </div>
-    </div>
-
+      </div>
     <script src="main.js"></script>
   </body>
 </html>
